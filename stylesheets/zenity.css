@@ -1,0 +1,74 @@
+/*
+ * Popup Stage Styles
+ */
+.popupStage
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 8px;
+}
+.popupStage .message
+{
+	padding-left: 10px;
+	padding-right: 5px;
+	font-size: 16px;
+}
+.popupStage .message .palm-dashboard-icon
+{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-left: 6px;
+	margin-right: 12px;
+	-webkit-background-size: 48px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #000;
+	background-image: none;
+}
+.popupStage .message .palm-dashboard-icon.info		{ background-image: url('../images/icon-info.png');		}
+.popupStage .message .palm-dashboard-icon.warning	{ background-image: url('../images/icon-warning.png');	}
+.popupStage .message .palm-dashboard-icon.question	{ background-image: url('../images/icon-question.png');	}
+.popupStage .message .palm-dashboard-icon.error 	{ background-image: url('../images/icon-error.png');	}
+.popupStage .message .title
+{
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+}
+.popupStage .buttons
+{
+	position: fixed;
+	z-index: 11001;
+	left: 5px;
+	right: 0px;
+	bottom: 0px;
+}
+.popupStage .buttons div
+{
+	float: right;
+	margin-right: 5px;
+	min-width: 91px;
+}
+
+
+
+
+/*
+ * Card Stage Styles
+ */
+.cardStage .palm-page-header .icon
+{
+	background-image: none;
+	-webkit-background-size: 32px;
+}
+.cardStage .palm-page-header .icon.info		{ background-image: url('../images/icon-info.png');		}
+.cardStage .palm-page-header .icon.warning	{ background-image: url('../images/icon-warning.png');	}
+.cardStage .palm-page-header .icon.question	{ background-image: url('../images/icon-question.png');	}
+.cardStage .palm-page-header .icon.error 	{ background-image: url('../images/icon-error.png');	}
+.cardStage .message
+{
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 5px;
+}

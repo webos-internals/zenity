@@ -1,0 +1,11 @@
+{
+	"id": "org.webosinternals.zenity",
+	"version": "0.0.1",
+	"vendor": "WebOS Internals",
+	"type": "web",
+	"main": "index.html",
+	"title": "zenity",
+	"icon": "icon.png",
+	"noWindow": true,
+	"noDeprecatedStyles": true 
+}
