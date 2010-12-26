@@ -4,7 +4,7 @@
 	"vendor": "WebOS Internals",
 	"type": "web",
 	"main": "index.html",
-	"title": "zenity",
+	"title": "Zenity",
 	"icon": "icon.png",
 	"noWindow": true,
 	"noDeprecatedStyles": true 

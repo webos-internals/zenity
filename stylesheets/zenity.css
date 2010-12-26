@@ -1,19 +1,44 @@
 /*
+ * Global Styles
+ */
+.scene-fade-top
+{
+	position: fixed;
+	top: 0;
+	z-index: 11000;
+	height: 30px;
+	width: 100%;
+	background: url(../images/palm-default/fade-top.png) top center repeat-x;
+	-webkit-palm-mouse-target: ignore;
+}
+.scene-fade-bottom
+{
+	position: fixed;
+	bottom: 0;
+	z-index: 11000;
+	height: 30px;
+	width: 100%;
+	background: url(../images/palm-default/fade-bottom.png) bottom center repeat-x;
+	-webkit-palm-mouse-target: ignore;
+}
+
+
+/*
  * Popup Stage Styles
  */
-.popupStage
+.popup
 {
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 8px;
 }
-.popupStage .message
+.popup .message
 {
 	padding-left: 10px;
 	padding-right: 5px;
 	font-size: 16px;
 }
-.popupStage .message .palm-dashboard-icon
+.popup .message .palm-dashboard-icon
 {
 	width: 60px;
 	height: 60px;
@@ -26,17 +51,17 @@
 	background-color: #000;
 	background-image: none;
 }
-.popupStage .message .palm-dashboard-icon.info		{ background-image: url('../images/icon-info.png');		}
-.popupStage .message .palm-dashboard-icon.warning	{ background-image: url('../images/icon-warning.png');	}
-.popupStage .message .palm-dashboard-icon.question	{ background-image: url('../images/icon-question.png');	}
-.popupStage .message .palm-dashboard-icon.error 	{ background-image: url('../images/icon-error.png');	}
-.popupStage .message .title
+.popup .message .palm-dashboard-icon.info		{ background-image: url('../images/icon-info.png');		}
+.popup .message .palm-dashboard-icon.warning	{ background-image: url('../images/icon-warning.png');	}
+.popup .message .palm-dashboard-icon.question	{ background-image: url('../images/icon-question.png');	}
+.popup .message .palm-dashboard-icon.error 		{ background-image: url('../images/icon-error.png');	}
+.popup .message .title
 {
 	font-size: 18px;
 	font-weight: bold;
 	border-bottom: 1px solid #fff;
 }
-.popupStage .buttons
+.popup .buttons
 {
 	position: fixed;
 	z-index: 11001;
@@ -44,7 +69,7 @@
 	right: 0px;
 	bottom: 0px;
 }
-.popupStage .buttons div
+.popup .buttons div
 {
 	float: right;
 	margin-right: 5px;
@@ -53,22 +78,107 @@
 
 
 
-
 /*
  * Card Stage Styles
  */
-.cardStage .palm-page-header .icon
+.card .palm-page-header .icon
 {
 	background-image: none;
 	-webkit-background-size: 32px;
 }
-.cardStage .palm-page-header .icon.info		{ background-image: url('../images/icon-info.png');		}
-.cardStage .palm-page-header .icon.warning	{ background-image: url('../images/icon-warning.png');	}
-.cardStage .palm-page-header .icon.question	{ background-image: url('../images/icon-question.png');	}
-.cardStage .palm-page-header .icon.error 	{ background-image: url('../images/icon-error.png');	}
-.cardStage .message
+.card .palm-page-header .icon.info		{ background-image: url('../images/icon-info.png');		}
+.card .palm-page-header .icon.warning	{ background-image: url('../images/icon-warning.png');	}
+.card .palm-page-header .icon.question	{ background-image: url('../images/icon-question.png');	}
+.card .palm-page-header .icon.error 	{ background-image: url('../images/icon-error.png');	}
+.card .message
 {
 	padding-top: 5px;
 	padding-left: 10px;
 	padding-right: 5px;
 }
+
+
+
+
+
+/*
+ * Help Scene Styles
+ */
+.help .list_scene
+{
+	position:relative;
+	left:48px;
+	top:10px;
+	width:32px; 
+	height:32px;
+	vertical-align:bottom;
+	padding: 0px 0px 0px 5px;
+	float:left;
+}
+.help .img_web
+{
+	position:relative;
+	left:8px;
+	top:10px;
+	width:32px; 
+	height:32px;
+	background: url(../images/help/application-web.png) no-repeat  bottom;
+	padding: 0px 0px 0px 5px;
+	float:left;
+}
+.help .img_email
+{
+	position:relative;
+	left:8px;
+	top:10px;
+	width:32px; 
+	height:32px;
+	background: url(../images/help/application-email.png) no-repeat bottom;
+	vertical-align:bottom;
+	padding: 0px 0px 0px 5px;
+	float:left;
+}
+.help .img_changelog
+{
+	position:relative;
+	left:8px;
+	top:10px;
+	width:32px; 
+	height:32px;
+	background: url(../images/help/scene-changelog.png) no-repeat  bottom;
+	padding: 0px 0px 0px 5px;
+	float:left;
+}
+
+
+
+/*
+ * Startup Scene Styles
+ */
+.startup #data .palm-divider.labeled .label
+{
+	text-transform: lowercase;
+}
+.startup #data
+{
+	font-size: 18px;
+}
+.startup #data .text
+{
+	padding-top: 4px;
+	padding-left: 17px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+.startup #data ul
+{
+	margin: 0px;
+	padding-left: 37px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+.startup #data ul.changelog
+{
+	font-size: 15px;
+}
+
